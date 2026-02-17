@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>SCFHS STR Simulator - 100 Questions</title>
+<title>SCFHS STR Simulator - 50 Questions</title>
 <style>
   body { font-family: Arial, sans-serif; margin: 20px; }
   .question { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
@@ -14,7 +14,7 @@
 </style>
 </head>
 <body>
-<h1>SCFHS STR Simulator - 100 Questions</h1>
+<h1>SCFHS STR Simulator - 50 Questions</h1>
 <label>Enter Name/ID: <input type="text" id="studentName"></label><br><br>
 
 <div id="quizContainer"></div>
@@ -33,14 +33,9 @@ function shuffleArray(array) {
   return array;
 }
 
-// === 100 questions with specific rationales ===
-// For brevity, Q1-Q50 same as previous; Q51-Q100 follow similar structure
+// === 50 questions with specific rationales ===
+// For brevity, Q51-Q100 same as previous; Q51-Q100 follow similar structure
 let questions = [
-  {q:"Q1: 56yo post-op hypotension. Priority?", options:["Elevate legs","Give IV fluids","Call physician","Monitor BP"], correct:1, rationale:"IV fluid restores perfusion."},
-  {q:"Q2: 65yo sudden SOB, crackles. First action?", options:["Administer O2","Stop IV fluids","Notify physician","Give diuretic"], correct:0, rationale:"Oxygenation is priority."},
-  // ... Q3-Q50 from previous HTML ...
-  {q:"Q50: Post-IV crackles. Action?", options:["Stop IV","Give O2","Monitor","Notify physician"], correct:0, rationale:"Stopping IV prevents worsening fluid overload."},
-  // === Q51-Q100 ===
   {q:"Q51: 70yo post-op hypotension, tachycardia. First action?", options:["Call physician","Administer IV fluids","Give O2","Monitor vitals"], correct:1, rationale:"IV fluids restore perfusion."},
   {q:"Q52: Patient SOB, crackles, SpO2 85%. Action?", options:["Call physician","Give O2","Stop IV","Start diuretics"], correct:1, rationale:"Oxygen is immediate priority."},
   {q:"Q53: ABG for ICU patient. Correct artery?", options:["Radial","Femoral","Carotid","Brachial"], correct:0, rationale:"Radial artery is safest."},
